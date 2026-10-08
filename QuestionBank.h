@@ -21,9 +21,9 @@ public:
     }
 
 
-    //takes a Question, uses its ID as the key, and puts it in the hash map. So bank["Q1"] = q.
-    void addQuestion(Question q) {
-        bank[q.getId()] = q;
+    //takes a Question, uses its ID as the key, and puts it in the hash map.
+    void addQuestion(const Question& q) {
+        bank.insert_or_assign(q.getId(), q);
     }
 
     //tells how many question in the bank.

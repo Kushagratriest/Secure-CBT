@@ -1,3 +1,7 @@
+// structure how a question is stored in the system
+//and a constructor to initialize the question object with the required parameters
+
+
 #pragma once
 #include <iostream>
 #include <string>
@@ -11,6 +15,14 @@ private:
     int difficulty;
     int marks;
 
+
+    Question() {
+    questionId = "";
+    text = "";
+    topic = "";
+    difficulty = 0;
+    marks = 0;
+}
 public:
     Question(string id, string text, string topic, int difficulty, int marks) {
         this->questionId = id;
@@ -20,9 +32,9 @@ public:
         this->marks = marks;
     }
 
-    string getId()    { return questionId; }
-    string getText()  { return text; }
-    string getTopic() { return topic; }
-    int getDifficulty() { return difficulty; }
-    int getMarks()    { return marks; }
+    string getId() const    { return questionId; }
+    string getText() const  { return text; }
+    string getTopic() const { return topic; }
+    int getDifficulty() const { return difficulty; }
+    int getMarks() const    { return marks; }
 };
