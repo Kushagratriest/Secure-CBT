@@ -80,6 +80,11 @@ public:
                 ids.erase(ids.begin() + pick);                  // remove it so it can't be picked again
             }
         }
+        // pass 3: shuffle the final paper so questions aren't grouped by topic
+        for (int i = (int)chosen.size() - 1; i > 0; i--) {      // walk backwards from the last question to index 1
+            int j = rand() % (i + 1);                           // pick a random index from 0 up to i
+            swap(chosen[i], chosen[j]);                         // swap the two questions (Fisher-Yates shuffle)
+        }
         return chosen;
     }
 };
