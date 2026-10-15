@@ -1,0 +1,15 @@
+.git
+.DS_Store
+secure cbt/frontend/node_modules
+secure_cbt
+secure_cbt_server
+demo
+temp.cpp
+*.scbt
+*.key
+output
+docs
+*.pdf
+*.pptx
+AGENTS.md
+TODO_AND_FRONTEND.md

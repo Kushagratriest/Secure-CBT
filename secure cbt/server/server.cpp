@@ -316,8 +316,9 @@ int main() {
         replyError(res, 500, msg);
     });
 
-    const char* host = "127.0.0.1";                            // this computer only: not reachable from the network
-    int port = 8080;
+    const char* host = "0.0.0.0";                              // listen on all network interfaces (needed for Docker/Render/HF & phone Wi-Fi)
+    const char* envPort = getenv("PORT");                      // cloud hosts (Render/Hugging Face) pass the port in the PORT variable
+    int port = (envPort != nullptr) ? atoi(envPort) : 8080;    // use PORT if set, otherwise default to 8080 locally
     cout << "Secure CBT server running at http://localhost:" << port << endl;
     if (!svr.listen(host, port)) {                             // blocks here until the server stops
         cout << "Could not start the server (is port " << port << " already in use?)" << endl;
