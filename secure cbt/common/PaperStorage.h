@@ -32,7 +32,7 @@ struct PaperPackage {
 };
 
 const string PACKAGE_MAGIC = "SCBT";        // first 4 bytes of every package file
-const unsigned char PACKAGE_VERSION = 1;    // bump this if the layout ever changes
+const unsigned char PACKAGE_VERSION = 2;    // bump this if the layout ever changes (2 = AES-256-GCM payload)
 
 // --- small helpers for writing/reading 4-byte numbers ---------------------
 // Written byte by byte (lowest byte first) so the file looks the same on
@@ -133,7 +133,7 @@ inline bool loadPaperPackage(const string& path, PaperPackage& pkg, string& erro
     }
 
     uint32_t payloadSize = 0;
-    if (!readU32(in, payloadSize) || payloadSize != (bitCount + 7) / 8) {   // payload must hold exactly bitCount bits
+    if (!readU32(in, payloadSize) || payloadSize != (bitCount + 7) / 8 + 28) {   // AES-GCM adds 12-byte nonce + 16-byte tag = 28 bytes
         error = "Payload size does not match the bit count";
         return false;
     }

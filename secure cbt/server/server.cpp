@@ -256,7 +256,7 @@ void handleLock(const httplib::Request&, httplib::Response& res) {
 
     KeyManager keyMgr;
     string rootKey = keyMgr.generateRootKey();
-    string encrypted = keyMgr.encrypt(compressed, rootKey);    // XOR for now (AES-256 for the final)
+    string encrypted = keyMgr.encrypt(compressed, rootKey);    // encrypt the compressed bytes with AES-256-GCM
 
     PaperPackage pkg;
     pkg.bitCount = compressor.getBitCount();
