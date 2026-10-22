@@ -1,0 +1,389 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[a4paper,top=1.55cm,bottom=1.35cm,left=1.75cm,right=1.75cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{eso-pic}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+
+\definecolor{GEUBlue}{RGB}{43,91,145}
+\definecolor{GEUBannerBlue}{RGB}{0,102,148}
+\definecolor{GEUYellow}{RGB}{255,201,38}
+\definecolor{InstructionGrey}{RGB}{125,125,125}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\renewcommand{\arraystretch}{1}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\fontsize{10.5}{12}\selectfont BTech CSE}
+\fancyhead[R]{\fontsize{10.5}{12}\selectfont PHASE-II PROJECT PROGRESS}
+\fancyfoot[R]{\fontsize{10}{12}\selectfont Page \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{20pt}
+\setlength{\headsep}{0.65cm}
+\setlength{\footskip}{0.65cm}
+
+\AddToShipoutPictureBG{%
+\begin{tikzpicture}[remember picture,overlay]
+    \fill[GEUYellow] (current page.south west) rectangle ([yshift=0.14cm]current page.south east);
+\end{tikzpicture}
+}
+
+\newcommand{\sectiontitle}[1]{{\color{GEUBlue}\fontsize{18}{22}\selectfont #1}\par}
+\newcommand{\instruction}[1]{{\color{InstructionGrey}\fontsize{10.5}{13}\selectfont #1}\par}
+\newcommand{\answerbox}[1]{%
+    \noindent
+    \begin{tabularx}{\textwidth}{|X|}
+        \hline
+        \fontsize{11}{13}\selectfont #1\\[6pt]
+        \hline
+    \end{tabularx}
+}
+
+\begin{document}
+
+% ============================================================
+% PAGE 1
+% ============================================================
+
+\vspace*{0.10cm}
+\includegraphics[width=8.0cm]{geulogo.png}
+\vspace{0.70cm}
+
+\noindent
+\colorbox{GEUBannerBlue}{%
+\parbox{\dimexpr\textwidth-2\fboxsep\relax}{
+    \vspace{0.17cm}
+    {\color{GEUYellow}\fontsize{16.5}{20}\selectfont\bfseries PROJECT AND TEAM INFORMATION}
+    \vspace{0.17cm}
+}}
+\vspace{0.80cm}
+
+\sectiontitle{Project Title}
+\vspace{0.05cm}
+\instruction{(Try to choose a catchy title. Max 20 words).}
+\vspace{0.40cm}
+\answerbox{Secure CBT: Hierarchical Key-Chained Question Paper Delivery \& Leak-Traceability System}
+\vspace{0.80cm}
+
+\noindent
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{0.69\textwidth}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\begin{minipage}[t]{\linewidth}
+\vspace{1.5mm}
+\textit{Team Name: Secure CBT}\\[1mm]
+\textit{Team \#: DSCPP-III-2026-T145}\\[1mm]
+\textit{Semester: 3rd \quad Section: BTECH}\\[1mm]
+\textit{Mentor: Mr. Kartikey Arora}
+\vspace{1.5mm}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\vspace{1.5mm}
+\end{minipage}
+\\
+\hline
+\begin{minipage}[t][3.25cm][t]{\linewidth}
+\vspace{1.5mm}
+\textbf{Team member 1 (Team Lead)}\\[-1mm]
+\textit{(Last Name, name: student ID: email, picture):}
+\end{minipage}
+&
+\begin{minipage}[t][3.25cm][t]{\linewidth}
+\vspace{1.5mm}
+\textit{Naman --}\\
+\textit{2510013438}\\
+\textit{2510013438@geu.ac.in}
+
+\vspace{2mm}
+\includegraphics[width=3.0cm,height=1.5cm,keepaspectratio]{naman.jpeg}
+\end{minipage}
+\\
+\hline
+\begin{minipage}[t][3.25cm][t]{\linewidth}
+\vspace{1.5mm}
+\textbf{Team member 2}\\[-1mm]
+\textit{(Last Name, name: student ID: email, picture):}
+\end{minipage}
+&
+\begin{minipage}[t][3.25cm][t]{\linewidth}
+\vspace{1.5mm}
+\textit{Gupta, Aayush --}\\
+\textit{2510370185}\\
+\textit{2510370185@geu.ac.in}
+
+\vspace{2mm}
+\includegraphics[width=3.0cm,height=1.5cm,keepaspectratio]{aayush.jpeg}
+\end{minipage}
+\\
+\hline
+\begin{minipage}[t][3.25cm][t]{\linewidth}
+\vspace{1.5mm}
+\textbf{Team member 3}\\[-1mm]
+\textit{(Last Name, name: student ID: email, picture):}
+\end{minipage}
+&
+\begin{minipage}[t][3.25cm][t]{\linewidth}
+\vspace{1.5mm}
+\textit{Bhushan, Kushagra --}\\
+\textit{2510012263}\\
+\textit{2510012263@geu.ac.in}
+
+\vspace{2mm}
+\includegraphics[width=3.0cm,height=1.5cm,keepaspectratio]{kushagra.jpeg}
+\end{minipage}
+\\
+\hline
+\end{tabularx}
+
+\newpage
+
+% ============================================================
+% PAGE 2
+% ============================================================
+
+\vspace*{0.15cm}
+\noindent
+\colorbox{GEUBannerBlue}{%
+\parbox{\dimexpr\textwidth-2\fboxsep\relax}{
+    \vspace{0.18cm}
+    {\color{GEUYellow}\fontsize{17}{21}\selectfont\bfseries PHASE-II PROJECT PROGRESS DESCRIPTION (35 pts)}
+    \vspace{0.18cm}
+}}
+\vspace{0.70cm}
+
+\sectiontitle{Project Abstract (2 pts)}
+\vspace{0.12cm}
+\answerbox{%
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item Secure CBT is a computer-based test question-paper system built around a single idea: a paper that leaks should still be traceable back to exactly where it leaked from.
+\item It targets the three points where a real exam paper is actually vulnerable: when the paper is set by teachers, when it is distributed down the exam hierarchy, and at the exam centre itself before the test begins.
+\item Rather than adding tracing as an afterthought (access logs, attendance records, duty rosters), the system builds traceability directly into the encryption: every node in the distribution hierarchy holds its own uniquely derived key, via hierarchical XOR key-chaining combined with AES-256, so a leaked ciphertext is its own fingerprint.
+\item Phase 1, the paper-setting pipeline (CSV upload, validation, question storage, paper generation, compression, and encryption), is built and running. Phase 2, secure distribution across the server hierarchy, is in progress. Phase 3, exam-centre decryption and leak tracing, is planned.
+\end{itemize}}
+\vspace{0.70cm}
+
+\sectiontitle{Updated Project Approach and Architecture (2 pts)}
+\vspace{0.25cm}
+\begin{tcolorbox}[breakable,boxrule=0.5pt,colframe=black!60,colback=white,arc=0pt,left=6pt,right=6pt,top=6pt,bottom=6pt]
+\fontsize{11}{13}\selectfont
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item The system is written in C++17 for all core data structures and algorithms, chosen for fine-grained control over memory and performance, which matters when every node in the hierarchy has to run its own encryption and lookup logic.
+\item OpenSSL provides the cryptographic primitives: AES-256 for encrypting the paper at each node, and SHA-256 for the tamper-evident transfer log, so the project relies on audited, standard implementations rather than hand-rolled cryptography.
+\item A web frontend handles the teacher-facing side: question-bank upload, CSV validation feedback, and template download, so the backend never has to deal with malformed input directly, and teachers get immediate feedback instead of a silent failure.
+\item Git/GitHub is used for version control, with all three members pushing to the shared repository, which also gives a clear history of who implemented which module.
+\end{itemize}
+
+\textbf{Phase 1 (built) --- Paper Setting}
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item Teachers upload a CSV question bank through the web screen, following the downloaded template, so no single teacher controls the final assembled paper and no manual compilation step is needed.
+\item The CSV checker reads the header and every row. It rejects the file outright if the header does not exactly match the template, and otherwise reports row-level errors (row number, field, and problem) so the teacher can fix and re-upload without guessing what went wrong.
+\item A file is accepted only once it contains at least one valid question; a header-only file is reported as empty rather than silently accepted as a zero-question paper.
+\item Valid questions are stored in a hash map (QuestionBank) for O(1) lookup by ID, and indexed by topic in a second hash map (TopicIndex), so the PaperGenerator can pull candidate questions per topic without scanning the whole bank.
+\item PaperGenerator selects N questions per topic using random selection without replacement, removing each chosen ID from the pool so it cannot repeat, which keeps the final paper balanced across topics rather than skewed toward whichever questions happen to be picked first.
+\item The selected questions are serialised into a single byte stream and compressed using Huffman coding: a frequency table is built from the byte stream, a min-heap merges nodes into a Huffman tree, and the resulting prefix-code table replaces common byte patterns with shorter bit codes.
+\item The compressed paper is then encrypted. Compression always runs before encryption, since encrypted data has no repeating patterns left for Huffman coding to exploit, so doing it the other way around would waste the compression step entirely.
+\end{itemize}
+
+\textbf{Phase 2 (in progress) --- Secure Distribution}
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item The distribution structure is an N-ary tree, implemented as a Left-Child Right-Sibling (LCRS) binary tree: each node stores a \texttt{firstChild} pointer and a \texttt{nextSibling} pointer, so any number of real children (states, districts, centres) can be represented with exactly two pointers per node instead of a variable-length child list.
+\item The paper is broadcast down the tree breadth-first (level by level), so every node at one level receives its copy before the next level begins, and transfers only ever move from parent to child, which rules out any accidental back-flow by construction.
+\item Each node's copy is encrypted independently using XOR key-chaining combined with AES-256: a node's key is derived from its parent's key XORed with the node's own secret, so decrypting at any level requires both pieces and no level in the chain can be skipped.
+\item Keys are derived on demand rather than pre-computed and stored in bulk, so only a small secret value is kept per node, which keeps memory overhead flat even as the hierarchy grows to cover many states and districts.
+\item An AVL tree indexes every node by ID, giving guaranteed O(log n) lookup of that node's secret, assigned key, and current status, even as nodes are added, which avoids the worst-case linear lookup a plain unbalanced tree could fall into.
+\item Every transfer between nodes is appended to a hash-chained log: each entry stores the SHA-256 hash of the previous entry plus its own data, so changing or removing any past entry breaks every hash after it in the chain, making tampering immediately detectable rather than something discovered later by chance.
+\end{itemize}
+
+\textbf{Phase 3 (planned) --- Exam Centre}
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item The exam centre server authenticates each student terminal and downloads the encrypted paper package addressed specifically to that centre, so a terminal cannot pull a paper meant for a different centre.
+\item Decryption is time-locked: the centre cannot read the paper before the scheduled exam start time, enforced by a time check, or by a min-heap Extract-Min when a single centre has to manage several exam slots and needs to know which one unlocks next.
+\item Decryption at the terminal uses the centre's key together with the node's own secret, following the same key-chain established in Phase 2, so Phase 3 reuses the existing key scheme instead of introducing a separate one.
+\item If an encrypted paper file ever surfaces publicly, it is matched directly against the AVL registry carried over from Phase 2 to identify the exact centre or terminal it was issued to, without needing any separate fingerprint database.
+\end{itemize}
+\end{tcolorbox}
+
+\newpage
+
+% ============================================================
+% PAGE 3
+% ============================================================
+
+\vspace*{0.20cm}
+\sectiontitle{Tasks Completed (7 pts)}
+\vspace{0.20cm}
+\noindent
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Task Completed} & \textbf{Team Member}\\
+\hline
+Key manager (XOR key derivation, encrypt/decrypt) & Naman\\
+\hline
+QuestionBank, Teacher, and PaperGenerator classes & Naman\\
+\hline
+Question.h and QuestionBank.h & Naman\\
+\hline
+TopicIndex.h and PaperGenerator.h & Aayush\\
+\hline
+Question-bank upload screen (frontend) & Kushagra\\
+\hline
+Huffman compression and encryption & Kushagra\\
+\hline
+CSV checker (in progress) & Kushagra\\
+\hline
+\end{tabularx}
+
+\vspace{0.65cm}
+
+\sectiontitle{Challenges/Roadblocks (7 pts)}
+\vspace{0.18cm}
+\answerbox{%
+\textbf{Formatting (solved)}
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item CSV files from Excel broke the parser, mainly with commas inside question text and UTF-8 byte-order marks.
+\item Fixed by requiring the template format, reading quoted fields correctly, and reporting row-level errors instead of failing silently.
+\end{itemize}
+
+\textbf{Phase 2 transfer (expected)}
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item Moving the encrypted paper between nodes is the next risk.
+\item Plan: simulate transfers in-process with function calls first, verify the tree broadcast and key chain, then add a network layer later.
+\end{itemize}}
+
+\vspace{0.65cm}
+
+\sectiontitle{Tasks Pending (7 pts)}
+\vspace{0.18cm}
+\noindent
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Task Pending} & \textbf{Team Member (to complete the task)}\\
+\hline
+LCRS tree and BFS broadcast & Naman\\
+\hline
+AVL node registry & Aayush and Naman\\
+\hline
+Presentation (PPT) & Aayush\\
+\hline
+XOR key-chaining with AES-256 per node & Kushagra\\
+\hline
+SHA-256 hash-chained log & Kushagra\\
+\hline
+Documentation and report & Kushagra\\
+\hline
+Transfer layer between nodes (simulated first) & Kushagra\\
+\hline
+Time-locked decryption at the centre & Naman\\
+\hline
+End-to-end simulation and leak-tracing evaluation & Aayush\\
+\hline
+\end{tabularx}
+
+\newpage
+
+% ============================================================
+% PAGE 4
+% ============================================================
+
+\vspace*{0.30cm}
+\sectiontitle{Project Outcome/Deliverables (2 pts)}
+\vspace{0.35cm}
+\answerbox{%
+\textbf{Phase 1}
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item A working paper-setting pipeline that takes a teacher's CSV upload all the way through to an encrypted, compressed paper, with no manual steps in between.
+\item CSV validation that catches a bad header or a bad row before it ever reaches the paper-generation logic, reporting the exact row, field, and problem back to the teacher.
+\item Complete, documented C++ source for QuestionBank, TopicIndex, PaperGenerator, the Huffman compressor, and the key manager.
+\item A question-bank upload screen with all three states (uploading, success, and error) wired to real backend output, not placeholder text.
+\end{itemize}
+
+\textbf{Phase 2 (planned)}
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item A working LCRS tree that broadcasts the encrypted paper down the server hierarchy using breadth-first traversal.
+\item Per-node encryption via XOR key-chaining and AES-256, so every node's ciphertext is uniquely keyed by its position in the hierarchy.
+\item An AVL-based node registry giving O(log n) lookup of any node's secret, key, and status.
+\item A SHA-256 hash-chained transfer log, with a demonstration that tampering with any past entry is caught immediately.
+\end{itemize}
+
+\textbf{Phase 3 (planned)}
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item Time-locked decryption at the exam centre, so no readable paper exists before the scheduled exam time.
+\item A multi-centre simulation covering several states, districts, and centres end to end.
+\item A leak-tracing demonstration that takes a simulated leaked ciphertext and identifies its source node using only the AVL registry.
+\end{itemize}}
+\vspace{0.75cm}
+
+\sectiontitle{Progress Overview (2 pts)}
+\vspace{0.25cm}
+\answerbox{%
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item Phase 1 is functionally complete: the full paper-setting pipeline (CSV upload, validation, QuestionBank/TopicIndex, PaperGenerator, Huffman compression, and encryption) is built and committed to the repository, along with the matching frontend upload screens.
+\item The CSV checker code is complete; formal test logging (header-only, valid file, and row-error cases) is the one remaining item before Phase 1 can be marked fully validated.
+\item Phase 2 has started ahead of the original plan: initial design and groundwork for the LCRS tree are underway, though the AVL registry and the hash-chained log have not yet been implemented.
+\item Nothing is currently behind schedule. The main risk going forward is the node-to-node transfer mechanism in Phase 2, which is why it is being simulated in-process first before any real networking is added.
+\end{itemize}}
+
+\newpage
+
+% ============================================================
+% PAGE 5
+% ============================================================
+
+\vspace{0.20cm}
+\sectiontitle{Codebase Information (2 pts)}
+\vspace{0.20cm}
+\answerbox{%
+\begin{itemize}[leftmargin=4mm,itemsep=3pt,topsep=2pt]
+\item \textbf{Repository:} \url{https://github.com/Kushagratriest/Secure-CBT}
+\item \textbf{Branch:} main
+\item \textbf{Latest update:} Question handling and project configuration, pushed by Naman
+\item \textbf{Key files added:} Key manager (encryption keys), question bank and question storage, topic index, paper generator
+\end{itemize}}
+\vspace{0.75cm}
+
+\sectiontitle{Testing and Validation Status (2 pts)}
+\vspace{0.30cm}
+\noindent
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{0.34\textwidth}|>{\raggedright\arraybackslash}p{0.31\textwidth}|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Test Type} & \textbf{Status (Pass/Fail)} & \textbf{Notes}\\
+\hline
+CSV checker, header-only file & Pass & Expected: Question bank can be uploaded.\\
+\hline
+CSV checker, valid 2-row file & Pass & Expected: count 2\\
+\hline
+CSV checker, row errors & Pass  & Expected: row, field, and problem reported\\
+\hline
+Phase 1 end-to-end pipeline & In progress & CSV to encrypted, compressed paper\\
+\hline
+Huffman round-trip & In progress & Decompresses to original text\\
+\hline
+Phase 2 transfer and broadcast & Not yet run & Planned after LCRS is built\\
+\hline
+\end{tabularx}
+\vspace{0.65cm}
+
+\sectiontitle{Deliverables Progress (2 pts)}
+\vspace{0.25cm}
+\answerbox{%
+\begin{itemize}[leftmargin=4mm,itemsep=2pt,topsep=2pt]
+\item Phase 1: backend built, CSV checker in progress, upload screen built.
+\item Phase 2: in progress, with LCRS and AVL next.
+\item Phase 3: planned.
+\end{itemize}}
+
+\end{document}
