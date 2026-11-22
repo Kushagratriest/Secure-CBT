@@ -182,6 +182,7 @@ public:
                 // Gatekeeper check: ask the AVL tree if this child is authorised ("Registered")
                 if (!registry.isRegistered(child->nodeId)) {    // child is Pending, Rejected, or missing from registry
                     child->delivered = false;                   // mark as not delivered
+                    child->encryptedPayload.clear();            // clear any stale payload on blocked node
                     reports.push_back({hopCounter, sender->nodeId, child->nodeId,
                                        "Blocked (Not Registered)", 0}); // record the blocked attempt
                     continue;                                   // do NOT derive a key, do NOT send, and do NOT push to queue
@@ -207,6 +208,30 @@ public:
         }
 
         return reports;                                         // return the complete level-order list of hop results
+    }
+
+    // Delivers the encrypted paper from a single already-delivered parent to one registered child
+    // (used for on-demand Centre -> Student Terminal L5 forwarding without re-running full BFS).
+    bool deliverSingleChild(const string& parentId,
+                            const string& childId,
+                            const AVLRegistry& registry,
+                            KeyManager& keyMgr,
+                            AuditLog& auditLog) {
+        LCRSNode* parentNode = findNode(root, parentId);        // locate the parent node
+        LCRSNode* childNode = findNode(root, childId);          // locate the child node
+        if (parentNode == nullptr || !parentNode->delivered) return false; // parent must already hold the paper
+        if (childNode == nullptr || childNode->parent != parentNode) return false; // child must belong to parent
+        if (!registry.isRegistered(childId)) {                  // verify child is Registered in AVLRegistry
+            childNode->delivered = false;                       // mark as not delivered
+            childNode->encryptedPayload.clear();                // ensure no stale payload remains
+            return false;                                       // block unauthorized child
+        }
+
+        childNode->key = keyMgr.deriveChildKey(parentNode->key, childNode->nodeId); // derive L(k+1) key via HKDF
+        childNode->encryptedPayload = keyMgr.encrypt(parentNode->encryptedPayload, childNode->key); // add AES-256-GCM layer (+28 B)
+        childNode->delivered = true;                            // mark child as delivered
+        auditLog.append(parentNode->nodeId, childNode->nodeId); // record hop in SHA-256 hash-chained audit log
+        return true;                                            // single-hop delivery succeeded
     }
 
     // Unwraps the onion-encrypted payload at 'targetNodeId' from the outside in (leaf -> ... -> parent -> root)
