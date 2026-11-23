@@ -1,0 +1,401 @@
+question_id,question_text,subject,topic,difficulty,marks
+CMP001,"Valid AVL balance factor values? (A) {-1, 0, +1} (B) {-2..+2} (C) {0, +1}",Data Structures,AVL Trees & BST,2,2
+CMP002,Rotation for LL imbalance? (A) RL Double (B) Single Right (C) LR Double (D) Single Left,Data Structures,AVL Trees & BST,3,1
+CMP003,Height of 29 sorted keys: BST vs AVL? (A) Both 5 (B) BST 15 vs AVL 5 (C) BST 29 vs AVL 5,Data Structures,AVL Trees & BST,3,1
+CMP004,Data structure used by BFS? (A) LIFO Stack (B) Min-Heap (C) FIFO Queue,Data Structures,Graphs & BFS,1,1
+CMP005,"Child/sibling pointers per node in LCRS? (A) 2 (firstChild, nextSibling) (B) log2(N) pointers (C) N pointers",Data Structures,Graphs & BFS,2,1
+CMP006,"Fisher-Yates time & extra space? (A) O(N log N) time, O(N) space (B) O(N) time, O(1) space (C) O(N^2) time, O(1) space",Data Structures,Sorting & Searching,2,1
+CMP007,Min-Heap Extract-Min complexity? (A) O(log N) (B) O(1) (C) O(N),Data Structures,Heaps & Huffman,2,1
+CMP008,std::unordered_map average lookup? (A) O(N) (B) O(log N) (C) O(1),Data Structures,Hash Maps & Linked Structures,1,1
+CMP009,Principle of std::stack? (A) FIFO (B) LIFO (C) Min-Key First,Data Structures,Linked Lists & Stacks,1,1
+CMP010,Why make Question() private? (A) Blocks blank Questions (B) Speeds up compilation (C) Makes class abstract,OOP with C++,Encapsulation & Access,3,1
+CMP011,How does Compare make a Min-Heap? (A) STL sorts ascending (B) a->freq > b->freq flips Max-Heap (C) Pointers invert heap,OOP with C++,"Templates, STL & Functors",3,1
+CMP012,Why `= delete` copy constructor in trees? (A) Reduces tree height (B) Enables multithreading (C) Stops shallow copy / double-free,OOP with C++,Memory Management & RAII,4,1
+CMP013,Why `inline` on functions in .h files? (A) Required for C++17 (B) Avoids duplicate symbol linker error (C) Prevents memory leaks,OOP with C++,Header-Only & Linkage,2,1
+CMP014,Meaning of trailing `const` on method? (A) Cannot mutate member state (B) Returns compile-time constant (C) Forces O(1) speed,OOP with C++,Const Correctness & Streams,2,1
+CMP015,Why does a polymorphic base need a virtual destructor? (A) Static base fields (B) Private constructors (C) Virtual base destructor,OOP with C++,Polymorphism & Virtual Dispatch,3,1
+CMP016,Role of std::lock_guard<mutex>? (A) Prevents race conditions (RAII) (B) Speeds up AES (C) Saves TCP ports,Operating Systems,Concurrency & Synchronization,2,1
+CMP017,Round-Robin with huge time quantum becomes? (A) LIFO (B) FCFS (C) SRTF,Operating Systems,"Processes, Threads & Scheduling",2,1
+CMP018,What triggers a page fault? (A) MMU bypass (B) OS page fault trap loads page (C) Kernel panic always,Operating Systems,Memory Management & Paging,2,1
+CMP019,"Four necessary conditions for deadlock? (A) Paging & Thrashing (B) Mutual Excl, Hold&Wait, No Preempt, Circular Wait (C) ACID",Operating Systems,Deadlocks,2,1
+CMP020,Why use `ios::binary` on Windows/Linux? (A) Grants root perms (B) Stops newline byte corruption (C) Auto-gzips files,Operating Systems,File I/O & Binary Mode,3,1
+CMP021,Condition for BCNF? (A) No multi-valued attrs (B) LHS X is a superkey (C) RHS Y is prime,DBMS,Normalization,3,1
+CMP022,ACID property hiding uncommitted writes? (A) Isolation (B) Atomicity (C) Durability,DBMS,Transactions & ACID,1,1
+CMP023,Why B+ Trees beat Hash Indexes on range queries? (A) O(1) height always (B) Hash forbids ints (C) Sorted linked leaf nodes,DBMS,SQL & Indexing,2,1
+CMP024,Difference: WHERE vs HAVING? (A) Identical aliases (B) HAVING runs before FROM (C) WHERE pre-GROUP BY; HAVING post-GROUP BY,DBMS,SQL Queries,2,1
+CMP025,Where do the +28 bytes per AES-256-GCM hop come from? (A) 28B Zero Padding (B) 12B Nonce + 16B Auth Tag (C) 28B Key Copy,Computer Networks & Security,Symmetric & AEAD Cryptography,2,1
+CMP026,Why HKDF-SHA256 instead of XOR for child keys? (A) One-way preimage resistant (XOR is reversible) (B) XOR breaks 32B keys (C) XOR is illegal in C++17,Computer Networks & Security,Key Derivation & Hashing,3,1
+CMP027,Result of editing Entry #3 in AuditLog? (A) Auto-heals chain (B) Detects mismatch & returns 3 (C) Only checks ends,Computer Networks & Security,Integrity & Audit Chains,2,1
+CMP028,Why compress BEFORE encrypting? (A) AES breaks Huffman tree (B) Ciphertext has uniform entropy (0% compression) (C) Encrypt needs big input,Computer Networks & Security,Compression vs Encryption,2,1
+CMP029,Onion layers at Student Terminal (BOARD..STU)? (A) 1 layer (rootKey) (B) 36 layers (C) 6 layers (Student -> Board),Computer Networks & Security,Leak Forensics & Onion Wrapping,3,1
+CMP030,Min height vs skewed height for 7 nodes? (A) Both 7 (B) 6 vs 7 (C) 3 vs 7,Data Structures,AVL Trees & BST,2,1
+CMP031,Min height vs skewed height for 15 nodes? (A) 4 vs 15 (B) 8 vs 15 (C) Both 15,Data Structures,AVL Trees & BST,2,1
+CMP032,Min height vs skewed height for 31 nodes? (A) 10 vs 31 (B) Both 31 (C) 5 vs 31,Data Structures,AVL Trees & BST,2,1
+CMP033,Min height vs skewed height for 63 nodes? (A) Both 63 (B) 6 vs 63 (C) 12 vs 63,Data Structures,AVL Trees & BST,2,1
+CMP034,Min height vs skewed height for 127 nodes? (A) 14 vs 127 (B) Both 127 (C) 7 vs 127,Data Structures,AVL Trees & BST,2,1
+CMP035,Min height vs skewed height for 255 nodes? (A) Both 255 (B) 8 vs 255 (C) 16 vs 255,Data Structures,AVL Trees & BST,2,1
+CMP036,Min height vs skewed height for 511 nodes? (A) 9 vs 511 (B) 18 vs 511 (C) Both 511,Data Structures,AVL Trees & BST,2,1
+CMP037,Min height vs skewed height for 1023 nodes? (A) 20 vs 1023 (B) Both 1023 (C) 10 vs 1023,Data Structures,AVL Trees & BST,2,1
+CMP038,Min height vs skewed height for 36 nodes? (A) Both 36 (B) 12 vs 36 (C) 6 vs 36,Data Structures,AVL Trees & BST,2,1
+CMP039,Min height vs skewed height for 58 nodes? (A) Both 58 (B) 6 vs 58 (C) 12 vs 58,Data Structures,AVL Trees & BST,2,1
+CMP040,7961 bits + L0 AES-GCM (+28B) size? (A) 1024 B (B) 1136 B (C) 996 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP041,L0 1024B after 5 onion hops? (A) 1164 B (B) 1136 B (C) 1024 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP042,12792 bits + L0 AES-GCM (+28B) size? (A) 1739 B (B) 1599 B (C) 1627 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP043,L0 1627B after 5 onion hops? (A) 1767 B (B) 1739 B (C) 1627 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP044,16000 bits + L0 AES-GCM (+28B) size? (A) 2000 B (B) 2140 B (C) 2028 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP045,L0 2028B after 5 onion hops? (A) 2140 B (B) 2168 B (C) 2028 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP046,20481 bits + L0 AES-GCM (+28B) size? (A) 2589 B (B) 2561 B (C) 2701 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP047,L0 2589B after 5 onion hops? (A) 2701 B (B) 2589 B (C) 2729 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP048,24000 bits + L0 AES-GCM (+28B) size? (A) 3000 B (B) 3140 B (C) 3028 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP049,L0 3028B after 5 onion hops? (A) 3028 B (B) 3168 B (C) 3140 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP050,27097 bits + L0 AES-GCM (+28B) size? (A) 3528 B (B) 3388 B (C) 3416 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP051,L0 3416B after 5 onion hops? (A) 3528 B (B) 3416 B (C) 3556 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP052,32001 bits + L0 AES-GCM (+28B) size? (A) 4029 B (B) 4001 B (C) 4141 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP053,L0 4029B after 5 onion hops? (A) 4029 B (B) 4169 B (C) 4141 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP054,40960 bits + L0 AES-GCM (+28B) size? (A) 5260 B (B) 5148 B (C) 5120 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP055,L0 5148B after 5 onion hops? (A) 5148 B (B) 5288 B (C) 5260 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP056,48005 bits + L0 AES-GCM (+28B) size? (A) 6001 B (B) 6029 B (C) 6141 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP057,L0 6029B after 5 onion hops? (A) 6169 B (B) 6141 B (C) 6029 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP058,64000 bits + L0 AES-GCM (+28B) size? (A) 8000 B (B) 8140 B (C) 8028 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP059,L0 8028B after 5 onion hops? (A) 8028 B (B) 8168 B (C) 8140 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP060,80003 bits + L0 AES-GCM (+28B) size? (A) 10029 B (B) 10141 B (C) 10001 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP061,L0 10029B after 5 onion hops? (A) 10169 B (B) 10029 B (C) 10141 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP062,96000 bits + L0 AES-GCM (+28B) size? (A) 12028 B (B) 12140 B (C) 12000 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP063,L0 12028B after 5 onion hops? (A) 12028 B (B) 12168 B (C) 12140 B,Computer Networks & Security,Encryption & Framing,3,1
+CMP064,Value for HTTPS (HTTP over TLS)? (A) 80 (B) 22 (C) 443,Computer Networks & Security,Protocols & Standards,1,1
+CMP065,Value for SSH (Secure Shell)? (A) 22 (B) 23 (C) 21,Computer Networks & Security,Protocols & Standards,1,1
+CMP066,Value for HTTP (Unencrypted Web)? (A) 53 (B) 80 (C) 443,Computer Networks & Security,Protocols & Standards,1,1
+CMP067,Value for DNS (Domain Name System)? (A) 80 (B) 53 (C) 67,Computer Networks & Security,Protocols & Standards,1,1
+CMP068,Value for SMTP (Email Routing)? (A) 25 (B) 143 (C) 110,Computer Networks & Security,Protocols & Standards,1,1
+CMP069,Value for AES-256 key length in bits? (A) 512 bits (64 bytes) (B) 128 bits (16 bytes) (C) 256 bits (32 bytes),Computer Networks & Security,Protocols & Standards,1,1
+CMP070,Value for SHA-256 digest length in hex characters? (A) 32 hex chars (16 bytes) (B) 128 hex chars (64 bytes) (C) 64 hex chars (32 bytes),Computer Networks & Security,Protocols & Standards,1,1
+CMP071,Value for AES-GCM standard Nonce / IV size? (A) 12 bytes (96 bits) (B) 4 bytes (32 bits) (C) 16 bytes (128 bits),Computer Networks & Security,Protocols & Standards,1,1
+CMP072,Value for AES-GCM Authentication Tag size? (A) 32 bytes (256 bits) (B) 16 bytes (128 bits) (C) 8 bytes (64 bits),Computer Networks & Security,Protocols & Standards,1,1
+CMP073,Value for Tailscale WireGuard UDP default port? (A) 41641 (B) 8090 (C) 22,Computer Networks & Security,Protocols & Standards,1,1
+CMP074,Main advantage of contiguous dynamic array? (A) Forces O(1) sorting (B) O(1) random index access (C) O(n) middle erase shift,Data Structures,Arrays & Vectors,2,1
+CMP075,Limitation of contiguous dynamic array? (A) O(n) middle erase shift (B) O(1) random index access (C) Unsupported on Linux,Data Structures,Arrays & Vectors,2,1
+CMP076,Main advantage of node pointer chain? (A) O(1) head insert/delete (B) O(n) index traversal (C) Forces O(1) sorting,Data Structures,Singly Linked Lists,2,1
+CMP077,Limitation of node pointer chain? (A) Unsupported on Linux (B) O(n) index traversal (C) O(1) head insert/delete,Data Structures,Singly Linked Lists,2,1
+CMP078,Main advantage of modulo wraparound buffer? (A) O(1) enqueue and dequeue (B) Forces O(1) sorting (C) fixed max capacity without resizing,Data Structures,Circular Queues,2,1
+CMP079,Limitation of modulo wraparound buffer? (A) fixed max capacity without resizing (B) Unsupported on Linux (C) O(1) enqueue and dequeue,Data Structures,Circular Queues,2,1
+CMP080,Main advantage of std::vector reallocation? (A) O(n) capacity-doubling copy on full resize (B) O(1) amortized push_back (C) Forces O(1) sorting,OOP with C++,STL Vectors,2,1
+CMP081,Limitation of std::vector reallocation? (A) O(n) capacity-doubling copy on full resize (B) Unsupported on Linux (C) O(1) amortized push_back,OOP with C++,STL Vectors,2,1
+CMP082,"Main advantage of std::unique_ptr RAII ownership? (A) automatic delete on scope exit (B) cannot be copied, only moved with std::move (C) Forces O(1) sorting",OOP with C++,Smart Pointers,2,1
+CMP083,"Limitation of std::unique_ptr RAII ownership? (A) Unsupported on Linux (B) automatic delete on scope exit (C) cannot be copied, only moved with std::move",OOP with C++,Smart Pointers,2,1
+CMP084,Main advantage of Shortest Job First (SJF)? (A) Forces O(1) sorting (B) minimum average waiting time (C) potential starvation of long CPU bursts,Operating Systems,CPU Scheduling,2,1
+CMP085,Limitation of Shortest Job First (SJF)? (A) Unsupported on Linux (B) potential starvation of long CPU bursts (C) minimum average waiting time,Operating Systems,CPU Scheduling,2,1
+CMP086,Main advantage of Translation Lookaside Buffer (TLB)? (A) fast hardware page-number cache (B) requires flush/ASID tag on context switch (C) Forces O(1) sorting,Operating Systems,Virtual Memory,2,1
+CMP087,Limitation of Translation Lookaside Buffer (TLB)? (A) requires flush/ASID tag on context switch (B) fast hardware page-number cache (C) Unsupported on Linux,Operating Systems,Virtual Memory,2,1
+CMP088,Main advantage of Shared Memory vs Message Passing? (A) requires explicit mutex/semaphore sync (B) Forces O(1) sorting (C) zero-copy speed after attach,Operating Systems,Inter-Process Comm,2,1
+CMP089,Limitation of Shared Memory vs Message Passing? (A) requires explicit mutex/semaphore sync (B) zero-copy speed after attach (C) Unsupported on Linux,Operating Systems,Inter-Process Comm,2,1
+CMP090,Main advantage of INNER JOIN vs LEFT JOIN? (A) keeps unmatched left-table rows as NULL (B) drops unmatched rows in INNER JOIN (C) Forces O(1) sorting,DBMS,SQL Joins,2,1
+CMP091,Limitation of INNER JOIN vs LEFT JOIN? (A) keeps unmatched left-table rows as NULL (B) drops unmatched rows in INNER JOIN (C) Unsupported on Linux,DBMS,SQL Joins,2,1
+CMP092,Main advantage of Two-Phase Locking (2PL)? (A) conflict serializable schedules (B) Forces O(1) sorting (C) possible deadlocks requiring wait-for checks,DBMS,Concurrency Control,2,1
+CMP093,Limitation of Two-Phase Locking (2PL)? (A) possible deadlocks requiring wait-for checks (B) conflict serializable schedules (C) Unsupported on Linux,DBMS,Concurrency Control,2,1
+CMP094,Main advantage of Write-Ahead Logging (WAL)? (A) supports UNDO/REDO recovery after crash (B) Forces O(1) sorting (C) log records flushed before dirty pages,DBMS,Crash Recovery,2,1
+CMP095,Limitation of Write-Ahead Logging (WAL)? (A) log records flushed before dirty pages (B) supports UNDO/REDO recovery after crash (C) Unsupported on Linux,DBMS,Crash Recovery,2,1
+CMP096,Decimal 8 in hex? (A) 0x10 (B) 0x8 (C) 0x8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP097,Decimal 16 in hex? (A) 0x16 (B) 0x10 (C) 0x18,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP098,Decimal 24 in hex? (A) 0x18 (B) 0x24 (C) 0x20,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP099,Decimal 32 in hex? (A) 0x28 (B) 0x32 (C) 0x20,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP100,Decimal 40 in hex? (A) 0x28 (B) 0x40 (C) 0x30,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP101,Decimal 48 in hex? (A) 0x30 (B) 0x38 (C) 0x48,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP102,Decimal 56 in hex? (A) 0x56 (B) 0x40 (C) 0x38,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP103,Decimal 64 in hex? (A) 0x48 (B) 0x64 (C) 0x40,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP104,Decimal 72 in hex? (A) 0x72 (B) 0x50 (C) 0x48,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP105,Decimal 80 in hex? (A) 0x58 (B) 0x80 (C) 0x50,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP106,Decimal 88 in hex? (A) 0x58 (B) 0x60 (C) 0x88,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP107,Decimal 96 in hex? (A) 0x60 (B) 0x96 (C) 0x68,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP108,Decimal 104 in hex? (A) 0x104 (B) 0x70 (C) 0x68,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP109,Decimal 112 in hex? (A) 0x70 (B) 0x78 (C) 0x112,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP110,Decimal 120 in hex? (A) 0x80 (B) 0x120 (C) 0x78,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP111,Decimal 128 in hex? (A) 0x80 (B) 0x88 (C) 0x128,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP112,Decimal 136 in hex? (A) 0x136 (B) 0x90 (C) 0x88,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP113,Decimal 144 in hex? (A) 0x90 (B) 0x98 (C) 0x144,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP114,Decimal 152 in hex? (A) 0xA0 (B) 0x98 (C) 0x152,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP115,Decimal 160 in hex? (A) 0xA0 (B) 0xA8 (C) 0x160,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP116,Decimal 168 in hex? (A) 0xB0 (B) 0x168 (C) 0xA8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP117,Decimal 176 in hex? (A) 0xB0 (B) 0xB8 (C) 0x176,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP118,Decimal 184 in hex? (A) 0xC0 (B) 0x184 (C) 0xB8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP119,Decimal 192 in hex? (A) 0xC0 (B) 0x192 (C) 0xC8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP120,Decimal 200 in hex? (A) 0x200 (B) 0xC8 (C) 0xD0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP121,Decimal 208 in hex? (A) 0x208 (B) 0xD8 (C) 0xD0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP122,Decimal 216 in hex? (A) 0xE0 (B) 0xD8 (C) 0x216,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP123,Decimal 224 in hex? (A) 0xE8 (B) 0x224 (C) 0xE0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP124,Decimal 232 in hex? (A) 0xF0 (B) 0xE8 (C) 0x232,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP125,Decimal 240 in hex? (A) 0xF8 (B) 0xF0 (C) 0x240,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP126,Decimal 248 in hex? (A) 0xF8 (B) 0x248 (C) 0x100,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP127,Decimal 256 in hex? (A) 0x256 (B) 0x100 (C) 0x108,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP128,Decimal 264 in hex? (A) 0x108 (B) 0x264 (C) 0x110,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP129,Decimal 272 in hex? (A) 0x110 (B) 0x118 (C) 0x272,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP130,Decimal 280 in hex? (A) 0x280 (B) 0x120 (C) 0x118,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP131,Decimal 288 in hex? (A) 0x288 (B) 0x120 (C) 0x128,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP132,Decimal 296 in hex? (A) 0x130 (B) 0x128 (C) 0x296,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP133,Decimal 304 in hex? (A) 0x138 (B) 0x304 (C) 0x130,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP134,Decimal 312 in hex? (A) 0x312 (B) 0x138 (C) 0x140,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP135,Decimal 320 in hex? (A) 0x140 (B) 0x320 (C) 0x148,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP136,Decimal 328 in hex? (A) 0x150 (B) 0x328 (C) 0x148,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP137,Decimal 336 in hex? (A) 0x158 (B) 0x336 (C) 0x150,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP138,Decimal 344 in hex? (A) 0x344 (B) 0x160 (C) 0x158,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP139,Decimal 352 in hex? (A) 0x168 (B) 0x352 (C) 0x160,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP140,Decimal 360 in hex? (A) 0x170 (B) 0x360 (C) 0x168,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP141,Decimal 368 in hex? (A) 0x170 (B) 0x178 (C) 0x368,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP142,Decimal 376 in hex? (A) 0x376 (B) 0x180 (C) 0x178,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP143,Decimal 384 in hex? (A) 0x384 (B) 0x180 (C) 0x188,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP144,Decimal 392 in hex? (A) 0x188 (B) 0x392 (C) 0x190,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP145,Decimal 400 in hex? (A) 0x400 (B) 0x190 (C) 0x198,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP146,Decimal 408 in hex? (A) 0x408 (B) 0x198 (C) 0x1A0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP147,Decimal 416 in hex? (A) 0x416 (B) 0x1A0 (C) 0x1A8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP148,Decimal 424 in hex? (A) 0x424 (B) 0x1B0 (C) 0x1A8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP149,Decimal 432 in hex? (A) 0x432 (B) 0x1B0 (C) 0x1B8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP150,Decimal 440 in hex? (A) 0x1C0 (B) 0x440 (C) 0x1B8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP151,Decimal 448 in hex? (A) 0x1C8 (B) 0x448 (C) 0x1C0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP152,Decimal 456 in hex? (A) 0x456 (B) 0x1C8 (C) 0x1D0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP153,Decimal 464 in hex? (A) 0x464 (B) 0x1D0 (C) 0x1D8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP154,Decimal 472 in hex? (A) 0x1E0 (B) 0x1D8 (C) 0x472,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP155,Decimal 480 in hex? (A) 0x1E0 (B) 0x1E8 (C) 0x480,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP156,Decimal 488 in hex? (A) 0x1F0 (B) 0x488 (C) 0x1E8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP157,Decimal 496 in hex? (A) 0x496 (B) 0x1F8 (C) 0x1F0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP158,Decimal 504 in hex? (A) 0x200 (B) 0x504 (C) 0x1F8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP159,Decimal 512 in hex? (A) 0x512 (B) 0x200 (C) 0x208,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP160,Decimal 520 in hex? (A) 0x210 (B) 0x520 (C) 0x208,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP161,Decimal 528 in hex? (A) 0x528 (B) 0x210 (C) 0x218,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP162,Decimal 536 in hex? (A) 0x220 (B) 0x536 (C) 0x218,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP163,Decimal 544 in hex? (A) 0x544 (B) 0x220 (C) 0x228,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP164,Decimal 552 in hex? (A) 0x552 (B) 0x230 (C) 0x228,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP165,Decimal 560 in hex? (A) 0x230 (B) 0x238 (C) 0x560,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP166,Decimal 568 in hex? (A) 0x238 (B) 0x240 (C) 0x568,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP167,Decimal 576 in hex? (A) 0x576 (B) 0x240 (C) 0x248,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP168,Decimal 584 in hex? (A) 0x248 (B) 0x584 (C) 0x250,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP169,Decimal 592 in hex? (A) 0x258 (B) 0x592 (C) 0x250,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP170,Decimal 600 in hex? (A) 0x600 (B) 0x260 (C) 0x258,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP171,Decimal 608 in hex? (A) 0x268 (B) 0x608 (C) 0x260,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP172,Decimal 616 in hex? (A) 0x268 (B) 0x616 (C) 0x270,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP173,Decimal 624 in hex? (A) 0x278 (B) 0x270 (C) 0x624,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP174,Decimal 632 in hex? (A) 0x278 (B) 0x280 (C) 0x632,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP175,Decimal 640 in hex? (A) 0x640 (B) 0x288 (C) 0x280,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP176,Decimal 648 in hex? (A) 0x290 (B) 0x288 (C) 0x648,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP177,Decimal 656 in hex? (A) 0x290 (B) 0x656 (C) 0x298,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP178,Decimal 664 in hex? (A) 0x298 (B) 0x2A0 (C) 0x664,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP179,Decimal 672 in hex? (A) 0x2A8 (B) 0x672 (C) 0x2A0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP180,Decimal 680 in hex? (A) 0x2B0 (B) 0x2A8 (C) 0x680,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP181,Decimal 688 in hex? (A) 0x688 (B) 0x2B0 (C) 0x2B8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP182,Decimal 696 in hex? (A) 0x696 (B) 0x2B8 (C) 0x2C0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP183,Decimal 704 in hex? (A) 0x2C0 (B) 0x2C8 (C) 0x704,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP184,Decimal 712 in hex? (A) 0x2D0 (B) 0x2C8 (C) 0x712,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP185,Decimal 720 in hex? (A) 0x2D8 (B) 0x720 (C) 0x2D0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP186,Decimal 728 in hex? (A) 0x728 (B) 0x2E0 (C) 0x2D8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP187,Decimal 736 in hex? (A) 0x2E8 (B) 0x736 (C) 0x2E0,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP188,Decimal 744 in hex? (A) 0x744 (B) 0x2F0 (C) 0x2E8,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP189,Decimal 752 in hex? (A) 0x2F8 (B) 0x2F0 (C) 0x752,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP190,Decimal 760 in hex? (A) 0x760 (B) 0x2F8 (C) 0x300,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP191,Decimal 768 in hex? (A) 0x768 (B) 0x308 (C) 0x300,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP192,Decimal 776 in hex? (A) 0x310 (B) 0x776 (C) 0x308,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP193,Decimal 784 in hex? (A) 0x318 (B) 0x784 (C) 0x310,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP194,Decimal 792 in hex? (A) 0x320 (B) 0x792 (C) 0x318,Computer Networks & Security,Encoding & Binary Arithmetic,1,1
+CMP195,Max nodes in depth-2 binary tree? (A) 4 (B) 2 (C) 3,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP196,Max nodes in depth-3 binary tree? (A) 8 (B) 7 (C) 4,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP197,Max nodes in depth-4 binary tree? (A) 15 (B) 16 (C) 8,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP198,Max nodes in depth-5 binary tree? (A) 16 (B) 31 (C) 32,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP199,Max nodes in depth-6 binary tree? (A) 64 (B) 32 (C) 63,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP200,Max nodes in depth-7 binary tree? (A) 127 (B) 64 (C) 128,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP201,Max nodes in depth-8 binary tree? (A) 128 (B) 256 (C) 255,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP202,Max nodes in depth-9 binary tree? (A) 512 (B) 511 (C) 256,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP203,Max nodes in depth-10 binary tree? (A) 512 (B) 1023 (C) 1024,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP204,Max nodes in depth-11 binary tree? (A) 1024 (B) 2048 (C) 2047,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP205,Max nodes in depth-12 binary tree? (A) 4096 (B) 2048 (C) 4095,Data Structures,Trees & Logarithmic Bounds,2,1
+CMP206,Output of `int x = 3; int* p = &x; *p += 2;`? (A) 9 (B) 5 (C) 6,OOP with C++,C++ Expressions & STL,2,1
+CMP207,"Output of `vector<int> v = {3, 3, 3+3}; cout << v.size();`? (A) 4 (B) 8 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP208,"Output of `int a = 3, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 7 (B) 1 (C) 2",OOP with C++,C++ Expressions & STL,2,1
+CMP209,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP210,"Output of `string s = ""SCBT_3""; cout << s.substr(0, 4).size();`? (A) 5 (B) 12 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP211,Output of `int x = 4; int* p = &x; *p += 2;`? (A) 7 (B) 10 (C) 6,OOP with C++,C++ Expressions & STL,2,1
+CMP212,"Output of `vector<int> v = {4, 3, 4+3}; cout << v.size();`? (A) 4 (B) 3 (C) 8",OOP with C++,C++ Expressions & STL,2,1
+CMP213,"Output of `int a = 4, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 0 (B) 1 (C) 6",OOP with C++,C++ Expressions & STL,2,1
+CMP214,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 32 (C) 33,OOP with C++,C++ Expressions & STL,2,1
+CMP215,"Output of `string s = ""SCBT_4""; cout << s.substr(0, 4).size();`? (A) 12 (B) 5 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP216,Output of `int x = 5; int* p = &x; *p += 2;`? (A) 7 (B) 11 (C) 8,OOP with C++,C++ Expressions & STL,2,1
+CMP217,"Output of `vector<int> v = {5, 3, 5+3}; cout << v.size();`? (A) 8 (B) 3 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP218,"Output of `int a = 5, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 2 (B) 7 (C) 1",OOP with C++,C++ Expressions & STL,2,1
+CMP219,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP220,"Output of `string s = ""SCBT_5""; cout << s.substr(0, 4).size();`? (A) 12 (B) 5 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP221,Output of `int x = 6; int* p = &x; *p += 2;`? (A) 9 (B) 12 (C) 8,OOP with C++,C++ Expressions & STL,2,1
+CMP222,"Output of `vector<int> v = {6, 3, 6+3}; cout << v.size();`? (A) 3 (B) 4 (C) 8",OOP with C++,C++ Expressions & STL,2,1
+CMP223,"Output of `int a = 6, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 8 (B) 3 (C) 2",OOP with C++,C++ Expressions & STL,2,1
+CMP224,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 33 (C) 39,OOP with C++,C++ Expressions & STL,2,1
+CMP225,"Output of `string s = ""SCBT_6""; cout << s.substr(0, 4).size();`? (A) 12 (B) 5 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP226,Output of `int x = 7; int* p = &x; *p += 2;`? (A) 13 (B) 10 (C) 9,OOP with C++,C++ Expressions & STL,2,1
+CMP227,"Output of `vector<int> v = {7, 3, 7+3}; cout << v.size();`? (A) 4 (B) 8 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP228,"Output of `int a = 7, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 3 (B) 9 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP229,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP230,"Output of `string s = ""SCBT_7""; cout << s.substr(0, 4).size();`? (A) 4 (B) 5 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP231,Output of `int x = 8; int* p = &x; *p += 2;`? (A) 14 (B) 11 (C) 10,OOP with C++,C++ Expressions & STL,2,1
+CMP232,"Output of `vector<int> v = {8, 3, 8+3}; cout << v.size();`? (A) 4 (B) 8 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP233,"Output of `int a = 8, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 10 (B) 4 (C) 5",OOP with C++,C++ Expressions & STL,2,1
+CMP234,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 39 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP235,"Output of `string s = ""SCBT_8""; cout << s.substr(0, 4).size();`? (A) 12 (B) 4 (C) 5",OOP with C++,C++ Expressions & STL,2,1
+CMP236,Output of `int x = 9; int* p = &x; *p += 2;`? (A) 11 (B) 15 (C) 12,OOP with C++,C++ Expressions & STL,2,1
+CMP237,"Output of `vector<int> v = {9, 3, 9+3}; cout << v.size();`? (A) 8 (B) 3 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP238,"Output of `int a = 9, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 6 (B) 5 (C) 11",OOP with C++,C++ Expressions & STL,2,1
+CMP239,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 39 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP240,"Output of `string s = ""SCBT_9""; cout << s.substr(0, 4).size();`? (A) 5 (B) 12 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP241,Output of `int x = 10; int* p = &x; *p += 2;`? (A) 13 (B) 16 (C) 12,OOP with C++,C++ Expressions & STL,2,1
+CMP242,"Output of `vector<int> v = {10, 3, 10+3}; cout << v.size();`? (A) 3 (B) 8 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP243,"Output of `int a = 10, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 7 (B) 12 (C) 6",OOP with C++,C++ Expressions & STL,2,1
+CMP244,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 32 (C) 33,OOP with C++,C++ Expressions & STL,2,1
+CMP245,"Output of `string s = ""SCBT_10""; cout << s.substr(0, 4).size();`? (A) 4 (B) 5 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP246,Output of `int x = 11; int* p = &x; *p += 2;`? (A) 17 (B) 14 (C) 13,OOP with C++,C++ Expressions & STL,2,1
+CMP247,"Output of `vector<int> v = {11, 3, 11+3}; cout << v.size();`? (A) 3 (B) 8 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP248,"Output of `int a = 11, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 7 (B) 8 (C) 13",OOP with C++,C++ Expressions & STL,2,1
+CMP249,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 33 (C) 39,OOP with C++,C++ Expressions & STL,2,1
+CMP250,"Output of `string s = ""SCBT_11""; cout << s.substr(0, 4).size();`? (A) 4 (B) 12 (C) 5",OOP with C++,C++ Expressions & STL,2,1
+CMP251,Output of `int x = 12; int* p = &x; *p += 2;`? (A) 18 (B) 15 (C) 14,OOP with C++,C++ Expressions & STL,2,1
+CMP252,"Output of `vector<int> v = {12, 3, 12+3}; cout << v.size();`? (A) 4 (B) 3 (C) 8",OOP with C++,C++ Expressions & STL,2,1
+CMP253,"Output of `int a = 12, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 9 (B) 14 (C) 8",OOP with C++,C++ Expressions & STL,2,1
+CMP254,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP255,"Output of `string s = ""SCBT_12""; cout << s.substr(0, 4).size();`? (A) 12 (B) 4 (C) 5",OOP with C++,C++ Expressions & STL,2,1
+CMP256,Output of `int x = 13; int* p = &x; *p += 2;`? (A) 15 (B) 19 (C) 16,OOP with C++,C++ Expressions & STL,2,1
+CMP257,"Output of `vector<int> v = {13, 3, 13+3}; cout << v.size();`? (A) 4 (B) 3 (C) 8",OOP with C++,C++ Expressions & STL,2,1
+CMP258,"Output of `int a = 13, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 15 (B) 10 (C) 9",OOP with C++,C++ Expressions & STL,2,1
+CMP259,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 33 (C) 39,OOP with C++,C++ Expressions & STL,2,1
+CMP260,"Output of `string s = ""SCBT_13""; cout << s.substr(0, 4).size();`? (A) 5 (B) 4 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP261,Output of `int x = 14; int* p = &x; *p += 2;`? (A) 16 (B) 17 (C) 20,OOP with C++,C++ Expressions & STL,2,1
+CMP262,"Output of `vector<int> v = {14, 3, 14+3}; cout << v.size();`? (A) 8 (B) 4 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP263,"Output of `int a = 14, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 11 (B) 16 (C) 10",OOP with C++,C++ Expressions & STL,2,1
+CMP264,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 39 (C) 33,OOP with C++,C++ Expressions & STL,2,1
+CMP265,"Output of `string s = ""SCBT_14""; cout << s.substr(0, 4).size();`? (A) 4 (B) 5 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP266,Output of `int x = 15; int* p = &x; *p += 2;`? (A) 17 (B) 21 (C) 18,OOP with C++,C++ Expressions & STL,2,1
+CMP267,"Output of `vector<int> v = {15, 3, 15+3}; cout << v.size();`? (A) 4 (B) 3 (C) 8",OOP with C++,C++ Expressions & STL,2,1
+CMP268,"Output of `int a = 15, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 12 (B) 11 (C) 17",OOP with C++,C++ Expressions & STL,2,1
+CMP269,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 39 (C) 33,OOP with C++,C++ Expressions & STL,2,1
+CMP270,"Output of `string s = ""SCBT_15""; cout << s.substr(0, 4).size();`? (A) 5 (B) 12 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP271,Output of `int x = 16; int* p = &x; *p += 2;`? (A) 18 (B) 19 (C) 22,OOP with C++,C++ Expressions & STL,2,1
+CMP272,"Output of `vector<int> v = {16, 3, 16+3}; cout << v.size();`? (A) 3 (B) 8 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP273,"Output of `int a = 16, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 18 (B) 12 (C) 13",OOP with C++,C++ Expressions & STL,2,1
+CMP274,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 32 (C) 39,OOP with C++,C++ Expressions & STL,2,1
+CMP275,"Output of `string s = ""SCBT_16""; cout << s.substr(0, 4).size();`? (A) 5 (B) 12 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP276,Output of `int x = 17; int* p = &x; *p += 2;`? (A) 20 (B) 19 (C) 23,OOP with C++,C++ Expressions & STL,2,1
+CMP277,"Output of `vector<int> v = {17, 3, 17+3}; cout << v.size();`? (A) 8 (B) 3 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP278,"Output of `int a = 17, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 19 (B) 13 (C) 14",OOP with C++,C++ Expressions & STL,2,1
+CMP279,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 39 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP280,"Output of `string s = ""SCBT_17""; cout << s.substr(0, 4).size();`? (A) 12 (B) 4 (C) 5",OOP with C++,C++ Expressions & STL,2,1
+CMP281,Output of `int x = 18; int* p = &x; *p += 2;`? (A) 21 (B) 24 (C) 20,OOP with C++,C++ Expressions & STL,2,1
+CMP282,"Output of `vector<int> v = {18, 3, 18+3}; cout << v.size();`? (A) 8 (B) 4 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP283,"Output of `int a = 18, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 20 (B) 14 (C) 15",OOP with C++,C++ Expressions & STL,2,1
+CMP284,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP285,"Output of `string s = ""SCBT_18""; cout << s.substr(0, 4).size();`? (A) 12 (B) 5 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP286,Output of `int x = 19; int* p = &x; *p += 2;`? (A) 25 (B) 22 (C) 21,OOP with C++,C++ Expressions & STL,2,1
+CMP287,"Output of `vector<int> v = {19, 3, 19+3}; cout << v.size();`? (A) 8 (B) 4 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP288,"Output of `int a = 19, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 21 (B) 15 (C) 16",OOP with C++,C++ Expressions & STL,2,1
+CMP289,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP290,"Output of `string s = ""SCBT_19""; cout << s.substr(0, 4).size();`? (A) 4 (B) 5 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP291,Output of `int x = 20; int* p = &x; *p += 2;`? (A) 26 (B) 22 (C) 23,OOP with C++,C++ Expressions & STL,2,1
+CMP292,"Output of `vector<int> v = {20, 3, 20+3}; cout << v.size();`? (A) 8 (B) 3 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP293,"Output of `int a = 20, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 17 (B) 22 (C) 16",OOP with C++,C++ Expressions & STL,2,1
+CMP294,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 39 (C) 33,OOP with C++,C++ Expressions & STL,2,1
+CMP295,"Output of `string s = ""SCBT_20""; cout << s.substr(0, 4).size();`? (A) 12 (B) 4 (C) 5",OOP with C++,C++ Expressions & STL,2,1
+CMP296,Output of `int x = 21; int* p = &x; *p += 2;`? (A) 23 (B) 27 (C) 24,OOP with C++,C++ Expressions & STL,2,1
+CMP297,"Output of `vector<int> v = {21, 3, 21+3}; cout << v.size();`? (A) 8 (B) 4 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP298,"Output of `int a = 21, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 17 (B) 23 (C) 18",OOP with C++,C++ Expressions & STL,2,1
+CMP299,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 33 (C) 39,OOP with C++,C++ Expressions & STL,2,1
+CMP300,"Output of `string s = ""SCBT_21""; cout << s.substr(0, 4).size();`? (A) 5 (B) 4 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP301,Output of `int x = 22; int* p = &x; *p += 2;`? (A) 24 (B) 28 (C) 25,OOP with C++,C++ Expressions & STL,2,1
+CMP302,"Output of `vector<int> v = {22, 3, 22+3}; cout << v.size();`? (A) 4 (B) 8 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP303,"Output of `int a = 22, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 24 (B) 18 (C) 19",OOP with C++,C++ Expressions & STL,2,1
+CMP304,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 32 (C) 39,OOP with C++,C++ Expressions & STL,2,1
+CMP305,"Output of `string s = ""SCBT_22""; cout << s.substr(0, 4).size();`? (A) 4 (B) 5 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP306,Output of `int x = 23; int* p = &x; *p += 2;`? (A) 26 (B) 25 (C) 29,OOP with C++,C++ Expressions & STL,2,1
+CMP307,"Output of `vector<int> v = {23, 3, 23+3}; cout << v.size();`? (A) 8 (B) 4 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP308,"Output of `int a = 23, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 20 (B) 25 (C) 19",OOP with C++,C++ Expressions & STL,2,1
+CMP309,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 39 (C) 33,OOP with C++,C++ Expressions & STL,2,1
+CMP310,"Output of `string s = ""SCBT_23""; cout << s.substr(0, 4).size();`? (A) 5 (B) 4 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP311,Output of `int x = 24; int* p = &x; *p += 2;`? (A) 30 (B) 27 (C) 26,OOP with C++,C++ Expressions & STL,2,1
+CMP312,"Output of `vector<int> v = {24, 3, 24+3}; cout << v.size();`? (A) 8 (B) 4 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP313,"Output of `int a = 24, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 26 (B) 20 (C) 21",OOP with C++,C++ Expressions & STL,2,1
+CMP314,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 39 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP315,"Output of `string s = ""SCBT_24""; cout << s.substr(0, 4).size();`? (A) 5 (B) 12 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP316,Output of `int x = 25; int* p = &x; *p += 2;`? (A) 31 (B) 28 (C) 27,OOP with C++,C++ Expressions & STL,2,1
+CMP317,"Output of `vector<int> v = {25, 3, 25+3}; cout << v.size();`? (A) 4 (B) 8 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP318,"Output of `int a = 25, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 27 (B) 22 (C) 21",OOP with C++,C++ Expressions & STL,2,1
+CMP319,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 33 (C) 39,OOP with C++,C++ Expressions & STL,2,1
+CMP320,"Output of `string s = ""SCBT_25""; cout << s.substr(0, 4).size();`? (A) 5 (B) 12 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP321,Output of `int x = 26; int* p = &x; *p += 2;`? (A) 29 (B) 32 (C) 28,OOP with C++,C++ Expressions & STL,2,1
+CMP322,"Output of `vector<int> v = {26, 3, 26+3}; cout << v.size();`? (A) 8 (B) 3 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP323,"Output of `int a = 26, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 28 (B) 23 (C) 22",OOP with C++,C++ Expressions & STL,2,1
+CMP324,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 39 (C) 33,OOP with C++,C++ Expressions & STL,2,1
+CMP325,"Output of `string s = ""SCBT_26""; cout << s.substr(0, 4).size();`? (A) 5 (B) 4 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP326,Output of `int x = 27; int* p = &x; *p += 2;`? (A) 29 (B) 33 (C) 30,OOP with C++,C++ Expressions & STL,2,1
+CMP327,"Output of `vector<int> v = {27, 3, 27+3}; cout << v.size();`? (A) 3 (B) 8 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP328,"Output of `int a = 27, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 29 (B) 24 (C) 23",OOP with C++,C++ Expressions & STL,2,1
+CMP329,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 39 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP330,"Output of `string s = ""SCBT_27""; cout << s.substr(0, 4).size();`? (A) 4 (B) 5 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP331,Output of `int x = 28; int* p = &x; *p += 2;`? (A) 31 (B) 30 (C) 34,OOP with C++,C++ Expressions & STL,2,1
+CMP332,"Output of `vector<int> v = {28, 3, 28+3}; cout << v.size();`? (A) 8 (B) 4 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP333,"Output of `int a = 28, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 24 (B) 25 (C) 30",OOP with C++,C++ Expressions & STL,2,1
+CMP334,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP335,"Output of `string s = ""SCBT_28""; cout << s.substr(0, 4).size();`? (A) 5 (B) 4 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP336,Output of `int x = 29; int* p = &x; *p += 2;`? (A) 31 (B) 32 (C) 35,OOP with C++,C++ Expressions & STL,2,1
+CMP337,"Output of `vector<int> v = {29, 3, 29+3}; cout << v.size();`? (A) 4 (B) 8 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP338,"Output of `int a = 29, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 25 (B) 26 (C) 31",OOP with C++,C++ Expressions & STL,2,1
+CMP339,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 39 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP340,"Output of `string s = ""SCBT_29""; cout << s.substr(0, 4).size();`? (A) 12 (B) 4 (C) 5",OOP with C++,C++ Expressions & STL,2,1
+CMP341,Output of `int x = 30; int* p = &x; *p += 2;`? (A) 36 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP342,"Output of `vector<int> v = {30, 3, 30+3}; cout << v.size();`? (A) 3 (B) 4 (C) 8",OOP with C++,C++ Expressions & STL,2,1
+CMP343,"Output of `int a = 30, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 32 (B) 26 (C) 27",OOP with C++,C++ Expressions & STL,2,1
+CMP344,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 33 (C) 39,OOP with C++,C++ Expressions & STL,2,1
+CMP345,"Output of `string s = ""SCBT_30""; cout << s.substr(0, 4).size();`? (A) 5 (B) 4 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP346,Output of `int x = 31; int* p = &x; *p += 2;`? (A) 33 (B) 34 (C) 37,OOP with C++,C++ Expressions & STL,2,1
+CMP347,"Output of `vector<int> v = {31, 3, 31+3}; cout << v.size();`? (A) 8 (B) 4 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP348,"Output of `int a = 31, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 33 (B) 27 (C) 28",OOP with C++,C++ Expressions & STL,2,1
+CMP349,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 32 (C) 39,OOP with C++,C++ Expressions & STL,2,1
+CMP350,"Output of `string s = ""SCBT_31""; cout << s.substr(0, 4).size();`? (A) 5 (B) 12 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP351,Output of `int x = 32; int* p = &x; *p += 2;`? (A) 35 (B) 34 (C) 38,OOP with C++,C++ Expressions & STL,2,1
+CMP352,"Output of `vector<int> v = {32, 3, 32+3}; cout << v.size();`? (A) 3 (B) 8 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP353,"Output of `int a = 32, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 28 (B) 34 (C) 29",OOP with C++,C++ Expressions & STL,2,1
+CMP354,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 39 (C) 33,OOP with C++,C++ Expressions & STL,2,1
+CMP355,"Output of `string s = ""SCBT_32""; cout << s.substr(0, 4).size();`? (A) 12 (B) 4 (C) 5",OOP with C++,C++ Expressions & STL,2,1
+CMP356,Output of `int x = 33; int* p = &x; *p += 2;`? (A) 39 (B) 36 (C) 35,OOP with C++,C++ Expressions & STL,2,1
+CMP357,"Output of `vector<int> v = {33, 3, 33+3}; cout << v.size();`? (A) 4 (B) 8 (C) 3",OOP with C++,C++ Expressions & STL,2,1
+CMP358,"Output of `int a = 33, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 35 (B) 29 (C) 30",OOP with C++,C++ Expressions & STL,2,1
+CMP359,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP360,"Output of `string s = ""SCBT_33""; cout << s.substr(0, 4).size();`? (A) 4 (B) 12 (C) 5",OOP with C++,C++ Expressions & STL,2,1
+CMP361,Output of `int x = 34; int* p = &x; *p += 2;`? (A) 37 (B) 36 (C) 40,OOP with C++,C++ Expressions & STL,2,1
+CMP362,"Output of `vector<int> v = {34, 3, 34+3}; cout << v.size();`? (A) 4 (B) 3 (C) 8",OOP with C++,C++ Expressions & STL,2,1
+CMP363,"Output of `int a = 34, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 30 (B) 31 (C) 36",OOP with C++,C++ Expressions & STL,2,1
+CMP364,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 32 (B) 39 (C) 33,OOP with C++,C++ Expressions & STL,2,1
+CMP365,"Output of `string s = ""SCBT_34""; cout << s.substr(0, 4).size();`? (A) 5 (B) 12 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP366,Output of `int x = 35; int* p = &x; *p += 2;`? (A) 38 (B) 37 (C) 41,OOP with C++,C++ Expressions & STL,2,1
+CMP367,"Output of `vector<int> v = {35, 3, 35+3}; cout << v.size();`? (A) 8 (B) 3 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP368,"Output of `int a = 35, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 31 (B) 32 (C) 37",OOP with C++,C++ Expressions & STL,2,1
+CMP369,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 39 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP370,"Output of `string s = ""SCBT_35""; cout << s.substr(0, 4).size();`? (A) 12 (B) 4 (C) 5",OOP with C++,C++ Expressions & STL,2,1
+CMP371,Output of `int x = 36; int* p = &x; *p += 2;`? (A) 38 (B) 42 (C) 39,OOP with C++,C++ Expressions & STL,2,1
+CMP372,"Output of `vector<int> v = {36, 3, 36+3}; cout << v.size();`? (A) 3 (B) 8 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP373,"Output of `int a = 36, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 38 (B) 33 (C) 32",OOP with C++,C++ Expressions & STL,2,1
+CMP374,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP375,"Output of `string s = ""SCBT_36""; cout << s.substr(0, 4).size();`? (A) 12 (B) 5 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP376,Output of `int x = 37; int* p = &x; *p += 2;`? (A) 40 (B) 39 (C) 43,OOP with C++,C++ Expressions & STL,2,1
+CMP377,"Output of `vector<int> v = {37, 3, 37+3}; cout << v.size();`? (A) 3 (B) 8 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP378,"Output of `int a = 37, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 34 (B) 39 (C) 33",OOP with C++,C++ Expressions & STL,2,1
+CMP379,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 39 (B) 33 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP380,"Output of `string s = ""SCBT_37""; cout << s.substr(0, 4).size();`? (A) 12 (B) 5 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP381,Output of `int x = 38; int* p = &x; *p += 2;`? (A) 41 (B) 40 (C) 44,OOP with C++,C++ Expressions & STL,2,1
+CMP382,"Output of `vector<int> v = {38, 3, 38+3}; cout << v.size();`? (A) 3 (B) 4 (C) 8",OOP with C++,C++ Expressions & STL,2,1
+CMP383,"Output of `int a = 38, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 35 (B) 34 (C) 40",OOP with C++,C++ Expressions & STL,2,1
+CMP384,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 39 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP385,"Output of `string s = ""SCBT_38""; cout << s.substr(0, 4).size();`? (A) 5 (B) 12 (C) 4",OOP with C++,C++ Expressions & STL,2,1
+CMP386,Output of `int x = 39; int* p = &x; *p += 2;`? (A) 45 (B) 41 (C) 42,OOP with C++,C++ Expressions & STL,2,1
+CMP387,"Output of `vector<int> v = {39, 3, 39+3}; cout << v.size();`? (A) 3 (B) 4 (C) 8",OOP with C++,C++ Expressions & STL,2,1
+CMP388,"Output of `int a = 39, b = 4; cout << ((a > b) ? a - b : b - a);`? (A) 41 (B) 35 (C) 36",OOP with C++,C++ Expressions & STL,2,1
+CMP389,Output of `int res = 1; for(int i=0; i<5; i++) res *= 2; // with b=5`? (A) 33 (B) 39 (C) 32,OOP with C++,C++ Expressions & STL,2,1
+CMP390,"Output of `string s = ""SCBT_39""; cout << s.substr(0, 4).size();`? (A) 5 (B) 4 (C) 12",OOP with C++,C++ Expressions & STL,2,1
+CMP391,"Avg wait (SJF, bursts 4, 3 at t=0)? (A) 7 ms (B) 2.0 ms (C) 1.5 ms",Operating Systems,CPU Scheduling,3,1
+CMP392,"Avg wait (SJF, bursts 4, 5 at t=0)? (A) 2.5 ms (B) 9 ms (C) 2.0 ms",Operating Systems,CPU Scheduling,3,1
+CMP393,"Avg wait (SJF, bursts 4, 7 at t=0)? (A) 2.0 ms (B) 3.5 ms (C) 11 ms",Operating Systems,CPU Scheduling,3,1
+CMP394,"Avg wait (SJF, bursts 6, 3 at t=0)? (A) 9 ms (B) 1.5 ms (C) 3.0 ms",Operating Systems,CPU Scheduling,3,1
+CMP395,"Avg wait (SJF, bursts 6, 5 at t=0)? (A) 3.0 ms (B) 2.5 ms (C) 11 ms",Operating Systems,CPU Scheduling,3,1
+CMP396,"Avg wait (SJF, bursts 6, 7 at t=0)? (A) 13 ms (B) 3.0 ms (C) 3.5 ms",Operating Systems,CPU Scheduling,3,1
+CMP397,"Avg wait (SJF, bursts 8, 3 at t=0)? (A) 4.0 ms (B) 1.5 ms (C) 11 ms",Operating Systems,CPU Scheduling,3,1
+CMP398,"Avg wait (SJF, bursts 8, 5 at t=0)? (A) 4.0 ms (B) 2.5 ms (C) 13 ms",Operating Systems,CPU Scheduling,3,1
+CMP399,"Avg wait (SJF, bursts 8, 7 at t=0)? (A) 3.5 ms (B) 4.0 ms (C) 15 ms",Operating Systems,CPU Scheduling,3,1
+CMP400,"Avg wait (SJF, bursts 10, 3 at t=0)? (A) 1.5 ms (B) 13 ms (C) 5.0 ms",Operating Systems,CPU Scheduling,3,1

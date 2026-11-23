@@ -1,0 +1,79 @@
+question_id,question_text,subject,topic,difficulty,marks
+DS01,Define a singly linked list and state one advantage over an array.,Data Structures,Linked Lists,1,2
+DS02,What is a circular linked list?,Data Structures,Linked Lists,1,2
+DS03,What is the time complexity of inserting at the head of a singly linked list?,Data Structures,Linked Lists,1,2
+DS04,"Write an algorithm to reverse a singly linked list, and state its time complexity.",Data Structures,Linked Lists,3,5
+DS05,Explain how a doubly linked list supports deletion of a given node in O(1) time.,Data Structures,Linked Lists,3,5
+DS06,"Design a doubly linked list with insert, delete and search operations. Write C++ code and analyse the complexity of each operation.",Data Structures,Linked Lists,4,10
+DS07,Define the height of a binary tree.,Data Structures,Trees,1,2
+DS08,What is a complete binary tree?,Data Structures,Trees,1,2
+DS09,State the property that every binary search tree must satisfy.,Data Structures,Trees,1,2
+DS10,"Write the inorder, preorder and postorder traversals of a given binary tree and explain each.",Data Structures,Trees,2,5
+DS11,Explain the four rotation cases used to rebalance an AVL tree.,Data Structures,Trees,4,5
+DS12,"Insert the keys 30, 20, 40, 10, 25, 35, 50, 5 into an empty AVL tree, showing the tree and any rotations after each insertion.",Data Structures,Trees,5,10
+DS13,Differentiate between a directed and an undirected graph.,Data Structures,Graphs,1,2
+DS14,What is an adjacency matrix?,Data Structures,Graphs,1,2
+DS15,State one real-world application of breadth-first search.,Data Structures,Graphs,2,2
+DS16,Compare BFS and DFS in terms of data structure used and order of traversal.,Data Structures,Graphs,3,5
+DS17,Explain why Dijkstra's algorithm fails on graphs with negative edge weights.,Data Structures,Graphs,4,5
+DS18,"Explain Dijkstra's shortest path algorithm with a worked example on a 6-vertex weighted graph, and state its time complexity using a min-heap.",Data Structures,Graphs,5,10
+DS19,What is a stable sorting algorithm?,Data Structures,Sorting and Searching,1,2
+DS20,State the best-case time complexity of insertion sort.,Data Structures,Sorting and Searching,1,2
+DS21,What is the precondition for applying binary search?,Data Structures,Sorting and Searching,1,2
+DS22,"Explain quick sort with an example, and state its worst-case time complexity.",Data Structures,Sorting and Searching,3,5
+DS23,Explain how a min-heap is used in heap sort.,Data Structures,Sorting and Searching,3,5
+DS24,"Explain merge sort, trace it on the array [38, 27, 43, 3, 9, 82, 10], and derive its time complexity using a recurrence relation.",Data Structures,Sorting and Searching,4,10
+OOP01,Define a class and an object in C++.,OOP with C++,Classes and Objects,1,2
+OOP02,What is a constructor?,OOP with C++,Classes and Objects,1,2
+OOP03,What is the purpose of the 'this' pointer?,OOP with C++,Classes and Objects,2,2
+OOP04,Explain the difference between a copy constructor and an assignment operator with an example.,OOP with C++,Classes and Objects,3,5
+OOP05,Explain access specifiers in C++ and how they support encapsulation.,OOP with C++,Classes and Objects,2,5
+OOP06,"Write a C++ class BankAccount with a constructor, destructor, deposit and withdraw functions. Explain how encapsulation protects the balance.",OOP with C++,Classes and Objects,3,10
+OOP07,What is single inheritance?,OOP with C++,Inheritance and Polymorphism,1,2
+OOP08,What is a virtual function?,OOP with C++,Inheritance and Polymorphism,2,2
+OOP09,What is an abstract class?,OOP with C++,Inheritance and Polymorphism,2,2
+OOP10,Differentiate between compile-time and run-time polymorphism with examples.,OOP with C++,Inheritance and Polymorphism,3,5
+OOP11,Explain the diamond problem in multiple inheritance and how virtual inheritance solves it.,OOP with C++,Inheritance and Polymorphism,4,5
+OOP12,"Design a class hierarchy for Shape, Circle and Rectangle using pure virtual functions. Write C++ code and explain how the vtable enables dynamic dispatch.",OOP with C++,Inheritance and Polymorphism,4,10
+OOP13,What is a function template?,OOP with C++,Templates and STL,1,2
+OOP14,Name any two STL containers.,OOP with C++,Templates and STL,1,2
+OOP15,What is an iterator in the STL?,OOP with C++,Templates and STL,2,2
+OOP16,"Compare std::vector and std::list in terms of memory layout, insertion and access time.",OOP with C++,Templates and STL,3,5
+OOP17,Explain how std::unordered_map stores data and state its average lookup time.,OOP with C++,Templates and STL,3,5
+OOP18,"Write a class template Stack<T> with push, pop and top operations. Explain how the compiler generates code for Stack<int> and Stack<string>.",OOP with C++,Templates and STL,4,10
+OS01,Define a process.,Operating Systems,Process Management,1,2
+OS02,What is a context switch?,Operating Systems,Process Management,1,2
+OS03,What is a process control block?,Operating Systems,Process Management,2,2
+OS04,Draw and explain the process state transition diagram.,Operating Systems,Process Management,2,5
+OS05,Differentiate between a process and a thread.,Operating Systems,Process Management,2,5
+OS06,"For the given processes with arrival and burst times, draw Gantt charts for FCFS, SJF and Round Robin (quantum 2), and compare their average waiting times.",Operating Systems,Process Management,4,10
+OS07,What is paging?,Operating Systems,Memory Management,1,2
+OS08,What is a page fault?,Operating Systems,Memory Management,1,2
+OS09,Define internal fragmentation.,Operating Systems,Memory Management,2,2
+OS10,Explain how a TLB speeds up address translation.,Operating Systems,Memory Management,3,5
+OS11,Differentiate between paging and segmentation.,Operating Systems,Memory Management,3,5
+OS12,"For the reference string 7, 0, 1, 2, 0, 3, 0, 4, 2, 3 with 3 frames, find the number of page faults using FIFO, LRU and Optimal replacement. Explain Belady's anomaly.",Operating Systems,Memory Management,5,10
+OS13,Define deadlock.,Operating Systems,Deadlocks,1,2
+OS14,What is a resource allocation graph?,Operating Systems,Deadlocks,2,2
+OS15,What is starvation?,Operating Systems,Deadlocks,1,2
+OS16,State and explain the four necessary conditions for deadlock.,Operating Systems,Deadlocks,2,5
+OS17,Explain deadlock prevention versus deadlock avoidance.,Operating Systems,Deadlocks,3,5
+OS18,"Apply the Banker's algorithm to the given allocation, max and available matrices. Determine whether the system is in a safe state and find a safe sequence.",Operating Systems,Deadlocks,5,10
+DB01,What is a primary key?,DBMS,SQL,1,2
+DB02,What is the difference between DELETE and TRUNCATE?,DBMS,SQL,2,2
+DB03,What is a foreign key?,DBMS,SQL,1,2
+DB04,"Explain INNER JOIN, LEFT JOIN and RIGHT JOIN with examples.",DBMS,SQL,3,5
+DB05,Explain the use of GROUP BY and HAVING with an example query.,DBMS,SQL,3,5
+DB06,"For tables Student(id, name, dept) and Marks(id, subject, score), write SQL queries to: (a) list students with average score above 75, (b) find the top scorer in each subject, (c) count students per department.",DBMS,SQL,4,10
+DB07,What is a functional dependency?,DBMS,Normalization,2,2
+DB08,Define first normal form.,DBMS,Normalization,1,2
+DB09,What is a candidate key?,DBMS,Normalization,1,2
+DB10,Differentiate between 3NF and BCNF with an example.,DBMS,Normalization,4,5
+DB11,Explain update and deletion anomalies with an example.,DBMS,Normalization,2,5
+DB12,"Given relation R(A, B, C, D, E) with dependencies A -> B, B -> C, CD -> E, find the candidate keys and normalise R up to BCNF, showing each step.",DBMS,Normalization,5,10
+DB13,What does ACID stand for?,DBMS,Transactions,1,2
+DB14,What is a dirty read?,DBMS,Transactions,2,2
+DB15,What is a schedule in transaction processing?,DBMS,Transactions,2,2
+DB16,Explain conflict serializability with an example.,DBMS,Transactions,3,5
+DB17,Explain the two-phase locking protocol.,DBMS,Transactions,3,5
+DB18,"Explain each ACID property with an example of what goes wrong when it is violated, and describe how a log-based recovery system restores consistency after a crash.",DBMS,Transactions,4,10

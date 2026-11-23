@@ -1,0 +1,9 @@
+services:
+  secure-cbt:
+    build: .
+    container_name: secure-cbt-app
+    ports:
+      - "8090:8090"
+    environment:
+      - PORT=8090
+    restart: unless-stopped
